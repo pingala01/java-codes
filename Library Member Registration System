@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class LibraryMemberRegistration {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Member Name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter Member ID: ");
+        String id = sc.nextLine();
+
+        if(name.length() >= 3 && id.startsWith("LIB")) {
+            System.out.println("Registration Successful");
+        } else {
+            System.out.println("Invalid Details");
+        }
+    }
+}
