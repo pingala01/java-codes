@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class EmployeeAttendanceTracker {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Employee Name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Days Present: ");
+        int days = sc.nextInt();
+
+        double attendance = (days / 30.0) * 100;
+
+        System.out.println("Employee: " + name);
+        System.out.println("Attendance: " + attendance + "%");
+    }
+}
