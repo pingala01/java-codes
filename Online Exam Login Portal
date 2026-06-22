@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class ExamLogin {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        String user = "student";
+        String pass = "exam123";
+
+        System.out.print("Username: ");
+        String u = sc.nextLine();
+
+        System.out.print("Password: ");
+        String p = sc.nextLine();
+
+        if(u.equals(user)
+                && p.equals(pass)){
+
+            System.out.println("Login Success");
+        }
+        else{
+            System.out.println("Invalid Login");
+        }
+    }
+}
