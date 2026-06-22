@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class CollegeAdmissionValidator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter Email: ");
+        String email = sc.nextLine();
+
+        if(name.length() > 2 && email.contains("@")) {
+            System.out.println("Application Accepted");
+        } else {
+            System.out.println("Application Rejected");
+        }
+    }
+}
