@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class FeedbackAnalyzer {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Feedback: ");
+        String feedback = sc.nextLine();
+
+        if(feedback.toLowerCase().contains("good")){
+            System.out.println("Positive Feedback");
+        }
+        else{
+            System.out.println("Needs Improvement");
+        }
+    }
+}
