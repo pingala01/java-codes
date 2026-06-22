@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class EmployeeSearch {
+
+    public static void main(String[] args) {
+
+        String[] employees={
+                "Kumar_IT",
+                "Ravi_HR",
+                "John_Sales",
+                "Mohan_IT"
+        };
+
+        Scanner sc=new Scanner(System.in);
+
+        System.out.print("Search Department: ");
+
+        String dep=sc.nextLine();
+
+        for(String emp:employees){
+
+            if(emp.endsWith(dep)){
+                System.out.println(emp);
+            }
+        }
+    }
+}
