@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class ResumeDataProcessing {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Skills (comma separated): ");
+        String skills = sc.nextLine();
+
+        String[] arr = skills.split(",");
+
+        System.out.println("Skills Count: " + arr.length);
+
+        for(String skill : arr) {
+            System.out.println(skill.trim());
+        }
+    }
+}
